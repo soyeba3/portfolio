@@ -39,7 +39,7 @@ const projects = [
       "NestJS",
       "Drizzle ORM",
       "MySQL",
-      "Redis",
+      "Stripe",
       "BunnyCDN",
     ],
     links: [
@@ -60,14 +60,7 @@ const projects = [
       { icon: FileText, text: "Assignment Submissions" },
       { icon: Calendar, text: "Class Scheduling" },
     ],
-    techStack: [
-      "Next.js",
-      "NestJS",
-      "Drizzle ORM",
-      "PostgreSQL",
-      "BunnyCDN",
-      "Gotipath",
-    ],
+    techStack: ["Next.js", "NestJS", "Drizzle ORM", "PostgreSQL", "Stripe"],
     links: [{ label: "Visit Site", href: "https://tarsheedacademy.com" }],
   },
   {
@@ -83,8 +76,8 @@ const projects = [
       { icon: FileText, text: "Document Tracking" },
       { icon: MessageSquare, text: "Real-time Messaging" },
     ],
-    techStack: ["Next.js", "Hono", "Drizzle ORM", "MySQL", "Lucia Auth"],
-    links: [{ label: "Visit Site", href: "https://uniassist.dev" }],
+    techStack: ["Next.js", "Drizzle ORM", "MySQL", "Lucia Auth"],
+    links: [{ label: "Visit Site", href: "https://dev.uniassist.info/" }],
   },
   {
     title: "Tarsheed One-to-One",
