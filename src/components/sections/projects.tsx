@@ -1,29 +1,24 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import { motion, useInView } from "framer-motion";
 import {
-  GraduationCap,
+  BookOpen,
   Building2,
+  Calendar,
+  CreditCard,
+  Database,
+  ExternalLink,
+  FileText,
+  GraduationCap,
+  MessageSquare,
+  Shield,
   Smartphone,
   Users,
   Video,
-  CreditCard,
-  Database,
-  Shield,
-  FileText,
-  MessageSquare,
-  Calendar,
-  BookOpen,
 } from "lucide-react";
+import { useRef } from "react";
 
 const projects = [
   {
@@ -47,6 +42,10 @@ const projects = [
       "Redis",
       "BunnyCDN",
     ],
+    links: [
+      { label: "Marketing Site", href: "https://academysuite.io/" },
+      { label: "Live Demo", href: "https://vasha.ac" },
+    ],
   },
   {
     title: "Tarsheed Academy",
@@ -69,6 +68,7 @@ const projects = [
       "BunnyCDN",
       "Gotipath",
     ],
+    links: [{ label: "Visit Site", href: "https://tarsheedacademy.com" }],
   },
   {
     title: "Uni Assist",
@@ -84,6 +84,7 @@ const projects = [
       { icon: MessageSquare, text: "Real-time Messaging" },
     ],
     techStack: ["Next.js", "Hono", "Drizzle ORM", "MySQL", "Lucia Auth"],
+    links: [{ label: "Visit Site", href: "https://uniassist.dev" }],
   },
   {
     title: "Tarsheed One-to-One",
@@ -99,6 +100,8 @@ const projects = [
       { icon: GraduationCap, text: "Exam & Progress Tracking" },
     ],
     techStack: ["React Native", "Expo", "NestJS", "PostgreSQL", "SSL Commerz"],
+    links: [],
+    comingSoon: true,
   },
 ];
 
@@ -182,6 +185,27 @@ export function Projects() {
                           {tech}
                         </Badge>
                       ))}
+                    </div>
+
+                    <div className="flex flex-wrap gap-3 mt-6 pt-6 border-t border-white/10">
+                      {project.links.map((link) => (
+                        <a
+                          key={link.label}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-sm text-zinc-300 hover:text-white transition-all duration-300 border border-white/10 hover:border-violet-500/30"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                          {link.label}
+                        </a>
+                      ))}
+                      {project.comingSoon && (
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/10 text-sm text-amber-400 border border-amber-500/20">
+                          <Smartphone className="w-4 h-4" />
+                          Coming Soon to Play Store
+                        </span>
+                      )}
                     </div>
                   </div>
 
