@@ -24,9 +24,12 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "browserslist": "^4.28.1",
+    "caniuse-lite": "^1.0.30001770",
     "eslint": "^9",
     "eslint-config-next": "16.0.10",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "update-browserslist-db": "^1.2.3"
   }
 }

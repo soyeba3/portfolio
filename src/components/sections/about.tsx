@@ -13,8 +13,8 @@ const highlights = [
   },
   {
     icon: Users,
-    title: "Lead Developer",
-    description: "At Hidayah Lab",
+    title: "2+ Years",
+    description: "Professional experience",
   },
   {
     icon: Rocket,
@@ -63,11 +63,11 @@ export function About() {
             className="space-y-6"
           >
             <p className="text-lg text-zinc-400 leading-relaxed">
-              As the{" "}
+              As a{" "}
               <span className="text-white font-medium">
-                Lead Developer at Hidayah Lab
+                Software Engineer at Hidayah Lab
               </span>
-              , I architect and build sophisticated software solutions that
+              , I build sophisticated software solutions that
               power educational platforms, mobile applications, and enterprise
               systems.
             </p>

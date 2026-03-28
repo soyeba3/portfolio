@@ -1,9 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
+import Image from "next/image";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/soyeba3", label: "GitHub" },
@@ -48,16 +48,6 @@ export function Hero() {
           </motion.div>
 
           <div className="flex-1 text-center lg:text-left">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <span className="inline-block px-4 py-2 rounded-full bg-violet-500/10 border border-violet-500/20 text-violet-300 text-sm font-medium mb-6">
-                Lead Developer @ Hidayah Lab
-              </span>
-            </motion.div>
-
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

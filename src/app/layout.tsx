@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Soyeb Chandani | Lead Developer at Hidayah Lab",
+  title: "Soyeb Chandani | Software Engineer at Hidayah Lab",
   description:
-    "Full-stack developer specializing in building scalable SaaS platforms, mobile apps, and enterprise solutions. Lead Developer at Hidayah Lab.",
+    "Full-stack developer specializing in building scalable SaaS platforms, mobile apps, and enterprise solutions. Software Engineer at Hidayah Lab.",
   keywords: [
     "Full-stack Developer",
-    "Lead Developer",
+    "Software Engineer",
     "SaaS",
     "React",
     "Next.js",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Soyeb Chandani" }],
   openGraph: {
-    title: "Soyeb Chandani | Lead Developer at Hidayah Lab",
+    title: "Soyeb Chandani | Software Engineer at Hidayah Lab",
     description:
       "Full-stack developer specializing in building scalable SaaS platforms, mobile apps, and enterprise solutions.",
     type: "website",
